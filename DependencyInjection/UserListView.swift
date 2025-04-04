@@ -11,6 +11,7 @@ struct UserListView: View {
     @State private var users : [User] = []
     private let service : UserServiceProtocol
     
+    //MARK: Initializer/Contructor Injection
     init(service: UserServiceProtocol) {
         self.service = service
     }
