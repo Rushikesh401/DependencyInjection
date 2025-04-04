@@ -19,7 +19,7 @@ struct UserListView: View {
     var body: some View {
         List(users) { user in
             Text(user.name)
-        }.task {
+        }.task { // task {} introduced in iOS 15+
             users = service.fetchUsers()
         }
     }
